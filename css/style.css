@@ -1,0 +1,451 @@
+* {
+  
+    box-sizing: content-boxs;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    
+  }
+  
+  
+  
+  
+ .container-fluid {
+ 
+ background-color: white;
+ margin-left: 10px;
+ 
+    }
+
+
+  
+ /* Override Bootstrap dark nav */
+.site-header .navbar {
+  background-color: white !important; /* Make nav background white */
+}
+
+.site-header .navbar .nav-link,
+.site-header .navbar .navbar-brand h1,
+.site-header .navbar .navbar-brand span {
+  color: black !important; /* Set font color to black */
+}
+
+/* Hover and active underline effect */
+.site-header .navbar .nav-link:hover,
+.site-header .navbar .nav-link:focus,
+.site-header .navbar .nav-link.active {
+  text-decoration: underline; /* Underline on hover/click */
+  color: black !important; /* Keep text black */
+}
+
+/* Remove dark toggle icon background if needed */
+.site-header .navbar-toggler {
+  border-color: black;
+}
+
+.site-header .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.paragraph{
+  color: black;
+  text-align: center;
+
+}
+
+
+  
+
+.cont-m{
+  background-color: white;
+
+}
+
+.beauty{
+  width: 100%;
+  height: 70vh;
+}
+.image-row {
+  display: flex; /* Makes the container a flexbox */
+  
+  align-items: flex-start;
+  gap: 5px; /* Adds spacing between the items */
+
+}
+
+.image-item {
+  text-align: center; /* Centers the text below each image */
+  width: 20%; /* Adjusts the width of each item */
+  
+}
+
+.image-item img {
+  width: 100%; /* Makes the image fill the container */
+  height: 40vh; /* Maintains the aspect ratio */
+  padding: 0%;
+  display: inline;
+}
+
+.image-item p {
+  margin-top: 10px; /* Adds spacing between the image and the text */
+  font-size: 0.9rem; /* Adjusts the font size */
+  color: #333; /* Sets the text color */
+}
+.price {
+  color: red; /* Sets the text color to red */
+  font-weight: bold; /* Optional: Makes the text bold */
+  margin-top: 5px; /* Optional: Adds spacing above the price text */
+}
+
+/* Container for the promotion section */
+.promotion {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Background video */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Text styles on top of the video */
+.promotion h1.gift,
+.promotion a.link {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Improves visibility */
+}
+
+/* Heading */
+.gift {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+/* Call to action button */
+.link {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: rgba(255, 105, 180, 0.85); /* Hotpink with transparency */
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.link:hover {
+  background-color: rgba(255, 20, 147, 0.9);
+}
+
+
+
+
+.footer{
+  width: 100%;
+  height: 200px;
+  border: 1px solid turquoise;
+  border-radius: 0 0 10px 10px;
+  background-image: linear-gradient(90deg, rgb(221, 244, 242), rgb(225, 237, 140), rgb(207, 230, 207));
+}
+
+.footer-content{
+  text-align: center;
+  font-size: 1em;
+  color: navy;
+}
+
+.socialmedia{
+  width: 100%;
+  text-align: center;
+}
+
+.socialmedia img{
+  border: 2px solid aqua;
+  border-radius: 10px;
+}
+.containersolid{
+  background-color: #240a0a;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+
+
+
+}
+/* Make images display side by side */
+#new-main {
+  display: flex;
+  gap: 15px; /* space between images */
+  padding-top: 20px;
+  padding-left: 35px;
+}
+
+/* Container for image and link */
+.image-box {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for images */
+.newpic {
+  width: 400px; /* adjust as needed */
+  height: 60vh;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Style the link on top-left of image */
+.new {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Optional: hover effect */
+.new:hover {
+  background-color: #000;
+  color: #fff;
+}
+.skin {
+  background-image: url("images/IMG-20250525-WA0056.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 1400px; /* You can change this size */
+  height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Heading styling */
+.skin h5 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Link styling */
+.skin a {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.skin a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+.image-row2 {
+  display: flex;
+  justify-content: center; /* centers all items horizontally */
+  gap: 90px; /* space between items */
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  margin-top: 20px;
+}
+
+.image-item2 {
+  text-align: center;
+  max-width: 200px;
+  flex: 1 1 200px;
+}
+
+.image-item2 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-item2 p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+.price {
+  font-weight: bold;
+  color: #b22222;
+}
+.h3{
+  text-align: center;
+  padding-top: 30px;
+
+}
+.h5j{
+  padding-top: 40px;
+  text-align: center;
+
+}
+.Jewelery{
+  width: 90%;
+  height: 70vh;
+padding-left: 80px;
+}
+.h5E{
+  padding-left: 40px;
+
+
+}
+.image-row3 {
+  display: flex;               /* arrange items in a row */
+  justify-content: center;     /* center the whole row */
+  gap: 20px;                   /* space between image blocks */
+  flex-wrap: wrap;             /* allows wrapping on smaller screens */
+  margin-top: 20px;
+}
+
+.image-item3 {
+  text-align: center;
+  max-width: 200px;
+}
+
+.image-item3 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.image-item3 img:hover {
+  transform: scale(1.05);      /* slight zoom on hover */
+}
+
+.price {
+  font-weight: bold;
+  margin-top: 5px;
+  color: #222;
+}
+/* Centered heading */
+.h9 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+/* Horizontal image container */
+.image-row9 {
+  display: flex;
+  flex-wrap: wrap;          /* allows wrapping on smaller screens */
+  justify-content: center;  /* center the row */
+  gap: 20px;                /* space between image cards */
+  padding: 0 20px;
+}
+
+/* Individual image block */
+.image-item9 {
+  max-width: 160px;
+  text-align: center;
+}
+
+/* Images */
+.image-item9 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-item9 img:hover {
+  transform: scale(1.05); /* zoom effect */
+}
+
+/* Price text */
+.price {
+  font-weight: bold;
+  margin-top: 5px;
+  color: #444;
+}
+/* Section heading */
+.h5j {
+  text-align: center;
+  
+}
+
+/* Image grid container */
+.image-row4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  /* 4 images in the first row */
+  gap: 20px;
+  justify-content: center;
+  padding: 0 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Image items */
+.image-item4 {
+  text-align: center;
+}
+
+/* Images */
+.image-item4 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.image-item4 img:hover {
+  transform: scale(1.05);
+}
+
+/* Price styling */
+.price {
+  margin-top: 5px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Force second row to only have 3 items */
+.image-item4:nth-child(n+5) {
+  grid-column: span 1;
+}
+
+@media (max-width: 768px) {
+  .image-row4 {
+    grid-template-columns: repeat(2, 1fr); /* Responsive: 2 per row */
+  }
+}
+
